@@ -34,10 +34,10 @@ public class CustomListTest {
         CustomList list = new CustomList();
 
         // Count should be 0 for a new list
-        // This 'countCities' method doesn't exist yet, so it will fail for now atleast
+        // This 'countCities' method does exist now, so it will pass
         assertEquals(0, list.countCities());
 
-        // Test 2: Count should be 1 after adding a city
+        // Count should be 1 after adding a city
         list.addCity(new City("Edmonton", "Alberta"));
         assertEquals(1, list.countCities());
     }
